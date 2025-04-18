@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Recommendation System</title>
+    <link rel="stylesheet" href="doc.css"> <!-- Updated CSS link -->
+</head>
+<body>
+    <div class="container">
+        <h2>Medical Recommendation System</h2>
+        <form id="medicalForm">
+            <label for="symptoms">Enter Symptoms:</label>
+            <input type="text" id="symptoms" placeholder="e.g., fever, cough" required>
+
+            <label for="age">Enter Age:</label>
+            <input type="number" id="age" placeholder="e.g., 25" required>
+
+            <label for="allergies">Any Allergies? (comma separated):</label>
+            <input type="text" id="allergies" placeholder="e.g., penicillin, aspirin">
+
+            <button type="button" onclick="getRecommendation()">Get Recommendation</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="doc.js"></script> <!-- Updated JS link -->
+</body>
+</html>
